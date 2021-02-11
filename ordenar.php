@@ -17,6 +17,7 @@
   <h1 align="center" class="display-3">Numeros Ordenados</h1>
   <p align="center" class="lead">  <a href="#">Mayor a Menor</a> </p>
 
+  <!-- Procedimiento -->
 <?php
 
 $numero1 = intval($_POST["numero1"]);
@@ -37,10 +38,15 @@ foreach ($orden as $or){
 <h3 align="center"><?php print($or); ?></h3>
 
 <?php
-    $promedio = $promedio+ $or;
+    $promedio = $promedio + $or;
 }
 $promtotal = $promedio / 5;
 //print($promtotal);
 ?>
 
 <h3 align="center"><a href="#">Promedio </a><?php print($promtotal); ?></h3>
+
+
+  <!-- Vovler-->
+<a href="index.php"><button type="button" href="index.php"  class="btn btn-primary btn-lg btn-block" > Ejecutar </button></a>
+
